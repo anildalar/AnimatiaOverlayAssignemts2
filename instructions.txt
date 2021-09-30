@@ -1,0 +1,9 @@
+DOM = Document Object Model
+
+rgba = red green blue alpha
+
+alpha 0 1
+
+0.4 + 0.4 = 0.8
+
+ctrl + k + c = multi line `comment
