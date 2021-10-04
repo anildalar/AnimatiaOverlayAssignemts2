@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Animatia Assignments</title>
         <style>
             .k_common{
@@ -42,11 +43,39 @@
                 transition:all 0.2s linear;
 
             }
+            .a_anchor{
+                text-decoration: none;
+                color:gray;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                background-color: #fff;
+                text-align: center;
+                position: absolute;
+                top:90px;
+                left:80px;
+                border-radius: 40px;
+                z-index: 10000;
+                transition-property: all;
+                transition-timing-function: linear;
+                transition-duration: 0.1s;
+                transition-delay: 0.3s;
+                opacity: 0;
+            }
+            .a_anchor_b{
+                left:140px;
+            }
+            .k_overlay:hover .a_anchor{
+                opacity: 1;
+            }
         </style>
     </head>
     <body>
         <h1>OverLay</h1>
         <div class="k_overlay k_common">
+            <a href="#" class="a_anchor"><i class="fas fa-link"></i></a>
+            <a href="#" class="a_anchor a_anchor_b"><i class="fas fa-search"></i></a>
             <div class="k_box1 k_common k1_common"></div>
             <div class="k_box2 k_common k1_common"></div>
         </div>

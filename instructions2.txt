@@ -1,0 +1,10 @@
+Solid Color
+
+more than two colors
+
+Gradient
+
+
+href = hyperlink reference
+
+cdn = content delivery network
