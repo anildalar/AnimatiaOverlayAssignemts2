@@ -22,6 +22,8 @@
                 background-repeat: no-repeat;
                 background-size: cover;
                 position: relative;
+                float: left;
+                margin-left: 5px;
                 overflow: hidden;
             }
             .k_box1{
@@ -69,15 +71,37 @@
             .k_overlay:hover .a_anchor{
                 opacity: 1;
             }
+            .k_box21{
+                background-image: -webkit-linear-gradient(top,rgba(0,0,0,0.7),rgba(0,0,0,0.1));
+            }
+            .k_box31{
+                background-color:rgba(0,0,0,0.5);
+                transform-origin: center top;
+                transform: rotateZ(0deg);
+            }
+            .k_overlay:hover .k_box31{
+                bottom: -212px;
+                transform: rotateZ(180deg);
+            }
         </style>
     </head>
     <body>
-        <h1>OverLay</h1>
+        <h1 style="margin-bottom: 250px;">OverLay</h1>
         <div class="k_overlay k_common">
             <a href="#" class="a_anchor"><i class="fas fa-link"></i></a>
             <a href="#" class="a_anchor a_anchor_b"><i class="fas fa-search"></i></a>
             <div class="k_box1 k_common k1_common"></div>
             <div class="k_box2 k_common k1_common"></div>
+        </div>
+        <div class="k_overlay k_common">
+            <a href="#" class="a_anchor"><i class="fas fa-link"></i></a>
+            <a href="#" class="a_anchor a_anchor_b"><i class="fas fa-search"></i></a>
+            <div class="k_box1 k_box21 k_common k1_common"></div>
+        </div>
+        <div class="k_overlay k_common">
+            <a href="#" class="a_anchor"><i class="fas fa-link"></i></a>
+            <a href="#" class="a_anchor a_anchor_b"><i class="fas fa-search"></i></a>
+            <div class="k_box2 k_box31 k_common k1_common"></div>
         </div>
     </body>
 </html>
