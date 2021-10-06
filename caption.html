@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Caption Animatia Effects</title>
+        <style>
+            body{ /* Element Selector */
+                margin: 0px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .a_box{ /* . is class Selector */
+                width: 277px;
+                height: 212px;
+                background-image: url("img/2.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 200px auto;
+                position: relative;
+                overflow: hidden;
+            }
+            .a_blackbox{
+                width: 257px;
+                height: 30px;
+                background-color:#333;
+                position: absolute;
+                top:-70px;
+                left:0px;
+                transition-property:all;
+                transition-duration: 0.2s;
+                transition-timing-function: linear;
+                padding: 15px 10px;
+                padding-bottom: 25px;
+            }
+            .a_box:hover .a_blackbox{
+                top:0px;
+            }
+            .a_blackbox div{
+                color:#fff;
+            }
+            .x{
+                color: #6a6a6a !important;
+            }
+            .a_anchor{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                background-color:#333;
+                border:2px solid #6a6a6a;
+                border-radius: 40px;
+                text-align: center;
+                float: right;
+            }
+            .a_anchor .fa-arrow-right{
+                color:#6a6a6a;
+            }
+            a:hover .fas{ /* , Combination Selection */
+                color:#fff;
+            }
+            a:hover{
+                border:2px solid #fff;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a_box">
+            <div class="a_blackbox">
+                <div style="float:left">
+                    <div>Lorem Ipsum</div> 
+                    <div class="x">By John Doe.</div>
+                </div>
+                <a href="#" class="a_anchor">
+                    <i class="fas fa-arrow-right"></i>
+                </a> 
+            </div>
+        </div>
+    </body>
+</html>
