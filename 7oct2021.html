@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                margin: 0px;
+            }
+            .common{
+                width: 278px;
+                height: 212px;
+            }
+            .a_box{
+                /* margin: T/B L/R; */
+                margin: 150px auto;
+                background-image: url("img/3.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+            }
+            .a_blackbox{
+                background-color:#000;
+                position: absolute;
+                top:0px;
+                left:0px;
+                transition: all 1s linear;
+                transform: perspective(600px) rotateX(-90deg);
+            }
+            .a_box:hover .a_blackbox{
+                transform: perspective(600px) rotateX(0deg);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="a_box common">
+            <div class="a_blackbox common"></div>
+        </div>
+    </body>
+</html>

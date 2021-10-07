@@ -1,0 +1,8 @@
+margin: v1   v2;
+margin: T/B  L/R;
+
+DOM = Document Object Model
+
+href= Hyper LInk Reference
+
+cdn = content delivery network
